@@ -1,0 +1,92 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right bottom, rgb(0,80,200), rgb(255,0,255));
+    align-items: center;
+}
+
+.tarjeta
+{
+    width: 60%;
+    height: 80%;
+    position: relative;
+    align-content: center;
+    background-size: cover;
+    overflow: hidden;
+    background: rgb(155,155,150);
+    opacity: 0.95;
+    border-radius: 5%;
+}
+
+.tarjeta h1
+{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+
+
+.formulario
+{
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+}
+
+form
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: inline-block;
+}
+
+.search
+{
+    text-align: center;
+    align-items: center;
+}
+
+.informacion
+{
+    position: relative;
+}
+
+p
+{
+    padding-bottom: 20px;
+    font-size: 60px;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: white;
+    font-weight: lighter;
+}
+
+footer
+{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color:rgb(30,30,30);
+	color: white;
+	text-align: center;
+}
+
+footer p
+{
+    font-size: 23px;
+}

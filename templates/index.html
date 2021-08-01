@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Api Temperatura</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/styles.css') }}">
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="tarjeta">
+        <h1>Temperatura Actual</h1>
+        <div class="formulario">
+            <form action="/" method="POST">
+                <input name="city_name" type="text" class="search" placeholder="Ingrese la ciudad">
+            </form>
+        </div>
+        <div class="informacion">
+            {% if data %}
+            <p>{{data[0]}}<br></p>
+            <p>{{data[1]}}° {{data[4]}}<br></p>
+            <p>Presión <br>{{data[2]}}hPa<br></p>
+            <p>Húmedad <br>{{data[3]}}%<br></p>
+            {% endif %}
+        </div>
+    </div>
+    <div>
+        <footer>
+            <p>Copyright &copy; Sebastián Ramírez Araya</p>
+        </footer>
+    </div>
+</body>
